@@ -32,6 +32,7 @@ git commit -m "add b in branch $BRANCH"
 git switch $MAIN_BRANCH
 git merge $BRANCH
 git branch -d $BRANCH
+git push origin $MAIN_BRANCH
 
 STEP
 
@@ -58,6 +59,7 @@ git commit -m "add b in branch $BRANCH"
 git switch $MAIN_BRANCH
 git merge --no-ff --no-edit $BRANCH
 git branch -d $BRANCH
+git push origin $MAIN_BRANCH
 
 STEP
 
