@@ -8,7 +8,7 @@ gh repo create "$CURDIR" --public --source=. --remote=origin
 
 STEP
 
-MAIN_BRANCH="main"
+MAIN_BRANCH="development"
 
 FILE="local-ff.txt"
 BRANCH="local-ff-1"
@@ -24,10 +24,10 @@ git commit -m "create $FILE"
 git switch -c $BRANCH
 echo a > $FILE
 git add --all
-git commit -m "add 1 in branch $BRANCH"
-echo b > $FILE
+git commit -m "add a in branch $BRANCH"
+echo b >> $FILE
 git add --all
-git commit -m "add 2 in branch $BRANCH"
+git commit -m "add b in branch $BRANCH"
 
 git switch $MAIN_BRANCH
 git merge $BRANCH
@@ -50,10 +50,10 @@ git commit -m "create $FILE"
 git switch -c $BRANCH
 echo a > $FILE
 git add --all
-git commit -m "add 1 in branch $BRANCH"
-echo b > $FILE
+git commit -m "add a in branch $BRANCH"
+echo b >> $FILE
 git add --all
-git commit -m "add 2 in branch $BRANCH"
+git commit -m "add b in branch $BRANCH"
 
 git switch $MAIN_BRANCH
 git merge --no-ff --no-edit $BRANCH
