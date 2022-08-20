@@ -1,10 +1,11 @@
 #!/bin/sh
 MAIN_BRANCH="main"
 
-FILE="pull-req-squash-merge.txt"
-BRANCH1="pr-squash-merge-1"
-BRANCH2="pr-squash-merge-2"
+FILE="pull-req-rebase-merge.txt"
+BRANCH1="pr-rebase-merge-1"
+BRANCH2="pr-rebase-merge-2"
 PR_MERGE_STYLE="rebase"
+
 cat << STEP 
 git switch $MAIN_BRANCH
 cat << EOF > $FILE

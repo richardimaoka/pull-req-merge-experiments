@@ -5,6 +5,7 @@ FILE="pull-req-merge-commit.txt"
 BRANCH1="pr-merge-commit-1"
 BRANCH2="pr-merge-commit-2"
 PR_MERGE_STYLE="merge"
+
 cat << STEP 
 git switch $MAIN_BRANCH
 cat << EOF > $FILE
@@ -29,10 +30,10 @@ git push --set-upstream origin $BRANCH1
 gh pr create --title $BRANCH1 --body "" --base $MAIN_BRANCH --head $BRANCH1
 
 git switch -c $BRANCH2 $MAIN_BRANCH
-sed -i 's/b/bbbbb/' pull-req-merge-commit.txt # ファイル中のbをbbbbbに置き換え
+sed -i 's/b/bbbbb/' $FILE # ファイル中のcをcccccに置き換え
 git add --all
 git commit -m "update b in $BRANCH2"
-sed -i 's/c/ccccc/' pull-req-merge-commit.txt # ファイル中のcをcccccに置き換え
+sed -i 's/c/ccccc/' $FILE # ファイル中のcをcccccに置き換え
 git add --all
 git commit -m "update c in $BRANCH2"
 
