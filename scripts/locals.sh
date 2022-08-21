@@ -20,7 +20,7 @@ git switch $MAIN_BRANCH
 git merge --no-ff --no-edit $BRANCH # ローカル環境でのno-ffマージ
 git branch -d $BRANCH
 
-git push origin main
+git push origin $MAIN_BRANCH
 
 git log --oneline --decorate --graph
 STEP
@@ -44,7 +44,7 @@ git switch $MAIN_BRANCH
 git merge $BRANCH # ローカル環境でのfast-forwardマージ
 git branch -d $BRANCH
 
-git push origin main
+git push origin $MAIN_BRANCH
 
 git log --oneline --decorate --graph
 STEP
