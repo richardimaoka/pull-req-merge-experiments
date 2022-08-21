@@ -1,5 +1,5 @@
 #!/bin/sh
-MAIN_BRANCH="main"
+MAIN_BRANCH="development"
 
 FILE="pull-req-squash-merge.txt"
 BRANCH1="pr-squash-merge-1"
