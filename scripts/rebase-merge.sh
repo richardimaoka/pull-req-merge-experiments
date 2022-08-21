@@ -1,5 +1,5 @@
 #!/bin/sh
-MAIN_BRANCH="main"
+MAIN_BRANCH="development"
 
 FILE="pull-req-rebase-merge.txt"
 BRANCH1="pr-rebase-merge-1"
