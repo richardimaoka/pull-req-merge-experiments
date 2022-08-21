@@ -1,5 +1,5 @@
 #!/bin/sh
-MAIN_BRANCH="main"
+MAIN_BRANCH="development"
 
 FILE="pull-req-merge-commit.txt"
 BRANCH1="pr-merge-commit-1"
