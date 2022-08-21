@@ -7,7 +7,6 @@ BRANCH2="pr-merge-commit-2"
 PR_MERGE_STYLE="merge"
 
 cat << STEP 
-git switch $MAIN_BRANCH
 cat << EOF > $FILE
 a
 
