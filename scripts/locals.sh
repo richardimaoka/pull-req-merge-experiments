@@ -1,6 +1,6 @@
 #!/bin/sh
 
-MAIN_BRANCH="main"
+MAIN_BRANCH="development"
 FILE="local-no-ff.txt"
 BRANCH="local-no-ff-1"
 cat << STEP 
